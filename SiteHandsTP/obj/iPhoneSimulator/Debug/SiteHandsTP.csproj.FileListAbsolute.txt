@@ -1,0 +1,10 @@
+D:\work\SitehandsMobileTP\SiteHandsTP\SiteHandsTP\bin\iPhoneSimulator\Debug\SiteHandsTP.exe
+D:\work\SitehandsMobileTP\SiteHandsTP\SiteHandsTP\bin\iPhoneSimulator\Debug\SiteHandsTP.pdb
+D:\work\SitehandsMobileTP\SiteHandsTP\SiteHandsTP\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+D:\work\SitehandsMobileTP\SiteHandsTP\SiteHandsTP\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+D:\work\SitehandsMobileTP\SiteHandsTP\SiteHandsTP\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+D:\work\SitehandsMobileTP\SiteHandsTP\SiteHandsTP\obj\iPhoneSimulator\Debug\optimized\Entitlements.plist
+D:\work\SitehandsMobileTP\SiteHandsTP\SiteHandsTP\obj\iPhoneSimulator\Debug\optimized\
+D:\work\SitehandsMobileTP\SiteHandsTP\SiteHandsTP\obj\iPhoneSimulator\Debug\SiteHandsTP.csproj.CoreCompileInputs.cache
+D:\work\SitehandsMobileTP\SiteHandsTP\SiteHandsTP\obj\iPhoneSimulator\Debug\SiteHandsTP.exe
+D:\work\SitehandsMobileTP\SiteHandsTP\SiteHandsTP\obj\iPhoneSimulator\Debug\SiteHandsTP.pdb
