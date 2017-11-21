@@ -40,8 +40,8 @@
       <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\LoginPageViewController.nib">
-      <LogicalName>MainStoryboard.storyboardc/LoginPageViewController.nib</LogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\LoginPageView.nib">
+      <LogicalName>MainStoryboard.storyboardc/LoginPageView.nib</LogicalName>
       <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>

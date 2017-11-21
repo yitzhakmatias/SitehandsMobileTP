@@ -29,3 +29,4 @@ D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\obj\iPhoneSimulator\Debug\X
 D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\obj\iPhoneSimulator\Debug\XamarinTP.csproj.CoreCompileInputs.cache
 D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\obj\iPhoneSimulator\Debug\SiteHandsTP.exe
 D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\obj\iPhoneSimulator\Debug\SiteHandsTP.pdb
+D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\bin\iPhoneSimulator\Debug\BL.Core.Services.dll.mdb

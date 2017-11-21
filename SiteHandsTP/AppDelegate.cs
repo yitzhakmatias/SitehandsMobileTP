@@ -57,19 +57,9 @@ namespace SiteHandsTP
             }
             else
             {
-             
-
-
-                UIStoryboard Storyboard = UIStoryboard.FromName("MainStoryboard", null);
-
-                UIViewController webController = Storyboard.InstantiateViewController("LoginPageViewController") as LoginPageViewController;
-
-
-               // webController.OnLoginSuccess += LoginViewController_OnLoginSuccess;
-
-
+                
                 //User needs to log in, so show the Login View Controlller
-                var loginViewController = GetViewController(MainStoryboard, "LoginPageViewController") as LoginPageViewController;
+                var loginViewController = GetViewController(MainStoryboard, "LoginPageView") as LoginPageViewController;
                 loginViewController.OnLoginSuccess += LoginViewController_OnLoginSuccess;
                 SetRootViewController(loginViewController, false);
             }

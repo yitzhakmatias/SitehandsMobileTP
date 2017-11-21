@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="379">
             <objects>
-                <navigationController id="380" sceneMemberID="viewController" storyboardIdentifier="MainTabBarController">
+                <navigationController id="380" sceneMemberID="viewController" storyboardIdentifier="MainTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="382">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -230,7 +230,7 @@
         </scene>
         <scene sceneID="11106">
             <objects>
-                <viewController id="11107" sceneMemberID="viewController" customClass="LoginPageViewController " storyboardIdentifier="LoginPageViewController">
+                <viewController id="11107" sceneMemberID="viewController" customClass="LoginPageViewController " storyboardIdentifier="LoginPageView" useStoryboardIdentifierAsRestorationIdentifier="YES">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="11104"/>
                         <viewControllerLayoutGuide type="bottom" id="11105"/>

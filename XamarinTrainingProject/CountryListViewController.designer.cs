@@ -7,11 +7,12 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
-namespace SiteHandsTP
+namespace XamarinTrainingProject
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("CountryListViewController")]
+    partial class CountryListViewController
     {
         void ReleaseDesignerOutlets ()
         {
