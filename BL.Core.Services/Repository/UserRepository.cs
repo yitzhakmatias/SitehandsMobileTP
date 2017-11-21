@@ -19,24 +19,31 @@ namespace BL.Core.Services.Repository
             new User
             {
                
-                Pass = "123123 Av Str",
-                Name = "John",
+                Pass = "admin",
+                Name = "john",
                 Email = "123123-212"
             },
             new User()
             {
                 //Id = 2,
-                Pass = "33333 Av Str",
-                Name = "Peter",
+                Pass = "admin",
+                Name = "peter",
                 Email = "666666-2222"
             },
             new User()
             {
                // Id = 1,
-                Pass = "9999 Av Str",
-                Name = "Sarah",
+                Pass = "admin",
+                Name = "sarah",
                 Email = "2233-2222"
-            }
+            },
+            new User()
+            {
+                //Id = 2,
+                Pass = "admin",
+                Name = "admin",
+                Email = "666666-2222"
+            },
         };
     }
 }

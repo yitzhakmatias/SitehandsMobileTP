@@ -1,12 +1,16 @@
 ﻿using Foundation;
 using System;
+using System.Linq;
+using BL.Core.Services.Repository;
 using UIKit;
 
 namespace XamarinTrainingProject
 {
     public partial class LoginController : UIViewController
     {
-        public LoginController (IntPtr handle) : base (handle)
+        readonly UserRepository _userRepository = new UserRepository();
+
+        public LoginController(IntPtr handle) : base(handle)
         {
         }
 
@@ -32,12 +36,17 @@ namespace XamarinTrainingProject
         }
         private bool IsUserNameValid()
         {
-            return !String.IsNullOrEmpty(UserNameTextView.Text.Trim());
+            if (String.IsNullOrEmpty(UserNameTextView.Text.Trim())) return false;
+            var user = _userRepository.GetWebUsers().FirstOrDefault(p => p.Name.Contains(UserNameTextView.Text.Trim()));
+            return user!=null;
         }
 
         private bool IsPasswordValid()
         {
-            return !String.IsNullOrEmpty(PasswordTextView.Text.Trim());
+            if (String.IsNullOrEmpty(PasswordTextView.Text.Trim())) return false;
+            var pass = _userRepository.GetWebUsers().FirstOrDefault(p => p.Pass.Contains(PasswordTextView.Text.Trim()));
+            return pass != null;
+            
         }
     }
 }
