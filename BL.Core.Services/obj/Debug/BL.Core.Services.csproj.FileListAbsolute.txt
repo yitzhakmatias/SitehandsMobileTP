@@ -1,0 +1,7 @@
+D:\work\labs\SiteHands\SitehandsMobileTP\BL.Core.Services\bin\Debug\BL.Core.Services.dll
+D:\work\labs\SiteHands\SitehandsMobileTP\BL.Core.Services\bin\Debug\BL.Core.Services.pdb
+D:\work\labs\SiteHands\SitehandsMobileTP\BL.Core.Services\bin\Debug\Newtonsoft.Json.dll
+D:\work\labs\SiteHands\SitehandsMobileTP\BL.Core.Services\bin\Debug\Newtonsoft.Json.xml
+D:\work\labs\SiteHands\SitehandsMobileTP\BL.Core.Services\obj\Debug\BL.Core.Services.csproj.CoreCompileInputs.cache
+D:\work\labs\SiteHands\SitehandsMobileTP\BL.Core.Services\obj\Debug\BL.Core.Services.dll
+D:\work\labs\SiteHands\SitehandsMobileTP\BL.Core.Services\obj\Debug\BL.Core.Services.pdb

@@ -1,0 +1,11 @@
+D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\bin\iPhone\Debug\SiteHandsTP.exe
+D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\bin\iPhone\Debug\SiteHandsTP.pdb
+D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\obj\iPhone\Debug\actool\_PartialAppManifest.items
+D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\obj\iPhone\Debug\optimized\Entitlements.plist
+D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\obj\iPhone\Debug\optimized\
+D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\obj\iPhone\Debug\SiteHandsTP.csprojResolveAssemblyReference.cache
+D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\obj\iPhone\Debug\SiteHandsTP.csproj.CoreCompileInputs.cache
+D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\obj\iPhone\Debug\SiteHandsTP.exe
+D:\work\labs\SiteHands\SitehandsMobileTP\SiteHandsTP\obj\iPhone\Debug\SiteHandsTP.pdb
