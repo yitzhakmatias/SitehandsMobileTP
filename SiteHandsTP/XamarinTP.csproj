@@ -96,6 +96,10 @@
     </Compile>
     <Compile Include="DataSources\CountryDataSource.cs" />
     <Compile Include="DataSources\UserDataSource.cs" />
+    <Compile Include="LoginPageViewController.cs" />
+    <Compile Include="LoginPageViewController.designer.cs">
+      <DependentUpon>LoginPageViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="GettingStarted.Xamarin" />
@@ -116,10 +120,14 @@
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewController.cs" />
-    <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="MainStoryboard.storyboard" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\Microsoft.CSharp.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>

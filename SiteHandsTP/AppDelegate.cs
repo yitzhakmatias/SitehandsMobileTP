@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using System;
+using Foundation;
 using UIKit;
 
 namespace SiteHandsTP
@@ -11,18 +12,75 @@ namespace SiteHandsTP
     {
         // class-level declarations
 
+        private bool isAuthenticated = false;
+
         public override UIWindow Window
         {
             get;
             set;
         }
 
+        public UIStoryboard MainStoryboard
+        {
+            get { return UIStoryboard.FromName("MainStoryboard", NSBundle.MainBundle); }
+        }
+
+        public UIViewController GetViewController(UIStoryboard storyboard, string viewControllerName)
+        {
+            return storyboard.InstantiateViewController(viewControllerName);
+        }
+        public void SetRootViewController(UIViewController rootViewController, bool animate)
+        {
+            if (animate)
+            {
+                var transitionType = UIViewAnimationOptions.TransitionFlipFromRight;
+
+                Window.RootViewController = rootViewController;
+                UIView.Transition(Window, 0.5, transitionType,
+                    () => Window.RootViewController = rootViewController,
+                    null);
+            }
+            else
+            {
+                Window.RootViewController = rootViewController;
+            }
+        }
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
-            // Override point for customization after application launch.
-            // If not required for your application you can safely delete this method
+            //isAuthenticated can be used for an auto-login feature, you'll have to implement this
+            //as you see fit or get rid of the if statement if you want.
+            if (isAuthenticated)
+            {
+                //We are already authenticated, so go to the main tab bar controller;
+                var tabBarController = GetViewController(MainStoryboard, "MainTabBarController");
+                SetRootViewController(tabBarController, false);
+            }
+            else
+            {
+             
+
+
+                UIStoryboard Storyboard = UIStoryboard.FromName("MainStoryboard", null);
+
+                UIViewController webController = Storyboard.InstantiateViewController("LoginPageViewController") as LoginPageViewController;
+
+
+               // webController.OnLoginSuccess += LoginViewController_OnLoginSuccess;
+
+
+                //User needs to log in, so show the Login View Controlller
+                var loginViewController = GetViewController(MainStoryboard, "LoginPageViewController") as LoginPageViewController;
+                loginViewController.OnLoginSuccess += LoginViewController_OnLoginSuccess;
+                SetRootViewController(loginViewController, false);
+            }
 
             return true;
+        }
+        void LoginViewController_OnLoginSuccess(object sender, EventArgs e)
+        {
+            //We have successfully Logged In
+            var tabBarController = GetViewController(MainStoryboard, "MainTabBarController");
+            SetRootViewController(tabBarController, true);
         }
 
         public override void OnResignActivation(UIApplication application)

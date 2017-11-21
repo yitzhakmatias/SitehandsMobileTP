@@ -5,59 +5,69 @@
       <LogicalName>LaunchScreen.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\Main.storyboardc\10533-view-10534.nib">
-      <LogicalName>Main.storyboardc/10533-view-10534.nib</LogicalName>
-      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\10533-view-10534.nib">
+      <LogicalName>MainStoryboard.storyboardc/10533-view-10534.nib</LogicalName>
+      <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\Main.storyboardc\5184-view-5185.nib">
-      <LogicalName>Main.storyboardc/5184-view-5185.nib</LogicalName>
-      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\11107-view-11108.nib">
+      <LogicalName>MainStoryboard.storyboardc/11107-view-11108.nib</LogicalName>
+      <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\Main.storyboardc\5577-view-5578.nib">
-      <LogicalName>Main.storyboardc/5577-view-5578.nib</LogicalName>
-      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\5184-view-5185.nib">
+      <LogicalName>MainStoryboard.storyboardc/5184-view-5185.nib</LogicalName>
+      <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\Main.storyboardc\648-view-649.nib">
-      <LogicalName>Main.storyboardc/648-view-649.nib</LogicalName>
-      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\5577-view-5578.nib">
+      <LogicalName>MainStoryboard.storyboardc/5577-view-5578.nib</LogicalName>
+      <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\Main.storyboardc\7175-view-7176.nib">
-      <LogicalName>Main.storyboardc/7175-view-7176.nib</LogicalName>
-      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\648-view-649.nib">
+      <LogicalName>MainStoryboard.storyboardc/648-view-649.nib</LogicalName>
+      <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\Main.storyboardc\Info.plist">
-      <LogicalName>Main.storyboardc/Info.plist</LogicalName>
-      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\7175-view-7176.nib">
+      <LogicalName>MainStoryboard.storyboardc/7175-view-7176.nib</LogicalName>
+      <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\Main.storyboardc\UINavigationController-380.nib">
-      <LogicalName>Main.storyboardc/UINavigationController-380.nib</LogicalName>
-      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\Info.plist">
+      <LogicalName>MainStoryboard.storyboardc/Info.plist</LogicalName>
+      <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\Main.storyboardc\UITableViewController-10533.nib">
-      <LogicalName>Main.storyboardc/UITableViewController-10533.nib</LogicalName>
-      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\LoginPageViewController.nib">
+      <LogicalName>MainStoryboard.storyboardc/LoginPageViewController.nib</LogicalName>
+      <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\Main.storyboardc\UITableViewController-5577.nib">
-      <LogicalName>Main.storyboardc/UITableViewController-5577.nib</LogicalName>
-      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\MainTabBarController.nib">
+      <LogicalName>MainStoryboard.storyboardc/MainTabBarController.nib</LogicalName>
+      <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\Main.storyboardc\UIViewController-648.nib">
-      <LogicalName>Main.storyboardc/UIViewController-648.nib</LogicalName>
-      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\UITableViewController-10533.nib">
+      <LogicalName>MainStoryboard.storyboardc/UITableViewController-10533.nib</LogicalName>
+      <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\Main.storyboardc\UIViewController-7175.nib">
-      <LogicalName>Main.storyboardc/UIViewController-7175.nib</LogicalName>
-      <InterfaceDefinition>Main.storyboard</InterfaceDefinition>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\UITableViewController-5577.nib">
+      <LogicalName>MainStoryboard.storyboardc/UITableViewController-5577.nib</LogicalName>
+      <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\UIViewController-648.nib">
+      <LogicalName>MainStoryboard.storyboardc/UIViewController-648.nib</LogicalName>
+      <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhoneSimulator\Debug\ibtool\MainStoryboard.storyboardc\UserDetailController.nib">
+      <LogicalName>MainStoryboard.storyboardc/UserDetailController.nib</LogicalName>
+      <InterfaceDefinition>MainStoryboard.storyboard</InterfaceDefinition>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
   </ItemGroup>
