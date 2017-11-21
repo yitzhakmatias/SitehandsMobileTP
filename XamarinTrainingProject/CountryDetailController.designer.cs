@@ -20,6 +20,10 @@ namespace XamarinTrainingProject
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView CountryFlag { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel MainCurrency { get; set; }
 
         [Outlet]
@@ -47,6 +51,11 @@ namespace XamarinTrainingProject
             if (Area != null) {
                 Area.Dispose ();
                 Area = null;
+            }
+
+            if (CountryFlag != null) {
+                CountryFlag.Dispose ();
+                CountryFlag = null;
             }
 
             if (MainCurrency != null) {

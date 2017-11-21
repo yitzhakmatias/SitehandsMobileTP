@@ -24,9 +24,9 @@ namespace SiteHandsTP.DataSources
             var country = _getCountries[indexPath.Row];
 
             cell.TextLabel.Text = country.Name +" "+ country.Region ;
+            
+            // cell.ImageView.Image = UIImage.FromBundle(country.Flag);
 
-           // cell.ImageView.Image = UIImage.FromBundle(country.Flag);
-           
             return cell;
         }
 

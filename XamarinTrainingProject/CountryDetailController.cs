@@ -1,5 +1,4 @@
-﻿using Foundation;
-using System;
+﻿using System;
 using BL.Core.Services.Model;
 using Newtonsoft.Json.Linq;
 using UIKit;
@@ -10,7 +9,7 @@ namespace XamarinTrainingProject
     {
         public Country Country { get; set; }
 
-        public CountryDetailController (IntPtr handle) : base (handle)
+        public CountryDetailController(IntPtr handle) : base(handle)
         {
         }
 
@@ -53,6 +52,9 @@ namespace XamarinTrainingProject
                     break;
                 }
             }
+      
+
+
         }
     }
 }
