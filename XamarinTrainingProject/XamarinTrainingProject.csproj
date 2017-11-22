@@ -127,6 +127,8 @@
   <ItemGroup>
     <Content Include="Entitlements.plist" />
     <BundleResource Include="Images\settings.png" />
+    <BundleResource Include="Images\flag.png" />
+    <BundleResource Include="Images\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BL.Core.Services\BL.Core.Services.csproj">

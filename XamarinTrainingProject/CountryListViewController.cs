@@ -26,7 +26,7 @@ namespace XamarinTrainingProject
                 , UIBarButtonItemStyle.Plain
                 , (sender, args) => {
                    // var settingsController = GetViewController(MainStoryboard, "Settings") as SettingsController;
-                    var settingsController = GetViewController(MainStoryboard, "SettingsNav") as UIViewController;
+                    var settingsController = GetViewController(MainStoryboard, "SettingsNav");
                     this.SettingsSelected(settingsController);
                 }),true);
 
@@ -36,7 +36,7 @@ namespace XamarinTrainingProject
             var companyDataSource = new CountryDataSource(countries, this);
             TableView.Source = companyDataSource;
             this.NavigationItem.Title = "Country List";
-          
+            
         }
 
         public UIViewController GetViewController(UIStoryboard storyboard, string viewControllerName)

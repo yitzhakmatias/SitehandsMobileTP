@@ -20,14 +20,14 @@ namespace XamarinTrainingProject.DataSources
 
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
-            UITableViewCell cell = tableView.DequeueReusableCell(_cellIdentifier) ?? new UITableViewCell(UITableViewCellStyle.Default, _cellIdentifier);
+            UITableViewCell cell = tableView.DequeueReusableCell(_cellIdentifier) ?? new UITableViewCell(UITableViewCellStyle.Subtitle, _cellIdentifier);
 
             var country = _getCountries[indexPath.Row];
 
-            cell.TextLabel.Text = country.Name +" "+ country.Region ;
-
+            cell.TextLabel.Text = country.Name ;
+            cell.DetailTextLabel.Text = country.Region;
             // cell.ImageView.Image = UIImage.FromBundle(country.Flag);
-           // TranscoderInput input_svg_image = new TranscoderInput(svg_URI_input);
+            // TranscoderInput input_svg_image = new TranscoderInput(svg_URI_input);
 
             return cell;
         }
