@@ -1,15 +1,12 @@
 ﻿using Foundation;
 using System;
 using BL.Core.Services.Model;
-using BL.Core.Services.Repository;
 using UIKit;
 
 namespace XamarinTrainingProject
 {
     public partial class SettingsController : UIViewController
     {
-        UserRepository userRepository = new UserRepository();
-
         public User User { get; set; }
         public SettingsController(IntPtr handle) : base(handle)
         {
@@ -21,17 +18,8 @@ namespace XamarinTrainingProject
 
             DatabindUI();
 
-            /* AddToCartButton.TouchUpInside += (object sender, EventArgs e) =>
-             {
-                 AddToCart(SelectedHotDog, Int32.Parse(AmountText.Text));
+            this.NavigationItem.Title = "User Settings";
 
-                 UIAlertView message = new UIAlertView("warning", "warning", null, "OK", null);
-                 message.Show();
-
-                 this.DismissModalViewController(true);
-             };
-
-            */
             Logout.TouchUpInside += (object sender, EventArgs e) =>
             {
 

@@ -4,12 +4,13 @@ using BL.Core.Services.Model;
 using Foundation;
 using UIKit;
 
-namespace SiteHandsTP.DataSources
+namespace XamarinTrainingProject.DataSources
 {
     public class CountryDataSource : UITableViewSource
     {
 
         private readonly List<Country> _getCountries;
+
         readonly NSString _cellIdentifier = new NSString("CountryCell");
 
         public CountryDataSource(List<Country> getCountries, UITableViewController controllers)

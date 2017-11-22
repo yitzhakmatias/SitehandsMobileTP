@@ -1,8 +1,8 @@
 ﻿using Foundation;
 using System;
 using BL.Core.Services.Repository;
-using SiteHandsTP.DataSources;
 using UIKit;
+using XamarinTrainingProject.DataSources;
 
 namespace XamarinTrainingProject
 {
@@ -25,11 +25,13 @@ namespace XamarinTrainingProject
             this.NavigationItem.SetRightBarButtonItem(new UIBarButtonItem(UIImage.FromFile("Images/settings.png")
                 , UIBarButtonItemStyle.Plain
                 , (sender, args) => {
-                    var settingsController = GetViewController(MainStoryboard, "Settings") as SettingsController;
-                    this.HotDogSelected(settingsController);
+                   // var settingsController = GetViewController(MainStoryboard, "Settings") as SettingsController;
+                    var settingsController = GetViewController(MainStoryboard, "SettingsNav") as UIViewController;
+                    this.SettingsSelected(settingsController);
                 }),true);
 
             //*********************************************/
+
             var countries = _countryRepository.GetWebCountries();
             var companyDataSource = new CountryDataSource(countries, this);
             TableView.Source = companyDataSource;
@@ -60,7 +62,7 @@ namespace XamarinTrainingProject
             }
         }
 
-        public async void HotDogSelected(UIViewController controller)
+        public async void SettingsSelected(UIViewController controller)
         {
         
             if (controller != null)
