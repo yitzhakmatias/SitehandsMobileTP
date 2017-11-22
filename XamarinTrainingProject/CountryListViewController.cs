@@ -9,18 +9,37 @@ namespace XamarinTrainingProject
     public partial class CountryListViewController : UITableViewController
     {
         readonly CountryRepository _countryRepository = new CountryRepository();
+        public UIStoryboard MainStoryboard
+        {
+            get { return UIStoryboard.FromName("Main", NSBundle.MainBundle); }
+        }
+     
         public CountryListViewController (IntPtr handle) : base (handle)
         {
+            
         }
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            //*********************************************/
+            this.NavigationItem.SetRightBarButtonItem(new UIBarButtonItem(UIImage.FromFile("Images/settings.png")
+                , UIBarButtonItemStyle.Plain
+                , (sender, args) => {
+                    var settingsController = GetViewController(MainStoryboard, "Settings") as SettingsController;
+                    this.HotDogSelected(settingsController);
+                }),true);
 
+            //*********************************************/
             var countries = _countryRepository.GetWebCountries();
             var companyDataSource = new CountryDataSource(countries, this);
             TableView.Source = companyDataSource;
             this.NavigationItem.Title = "Country List";
           
+        }
+
+        public UIViewController GetViewController(UIStoryboard storyboard, string viewControllerName)
+        {
+            return storyboard.InstantiateViewController(viewControllerName);
         }
         public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
         {
@@ -38,6 +57,17 @@ namespace XamarinTrainingProject
                 }
 
 
+            }
+        }
+
+        public async void HotDogSelected(UIViewController controller)
+        {
+        
+            if (controller != null)
+            {
+                controller.ModalTransitionStyle = UIModalTransitionStyle.PartialCurl;
+
+                await PresentViewControllerAsync(controller, true);
             }
         }
     }

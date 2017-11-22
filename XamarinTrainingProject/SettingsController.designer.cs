@@ -11,18 +11,27 @@ using UIKit;
 
 namespace XamarinTrainingProject
 {
-    [Register ("CountryListViewController")]
-    partial class CountryListViewController
+    [Register ("SettingsController")]
+    partial class SettingsController
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UINavigationItem NavigationController { get; set; }
+        UIKit.UITextField EmailTxt { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton Logout { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (NavigationController != null) {
-                NavigationController.Dispose ();
-                NavigationController = null;
+            if (EmailTxt != null) {
+                EmailTxt.Dispose ();
+                EmailTxt = null;
+            }
+
+            if (Logout != null) {
+                Logout.Dispose ();
+                Logout = null;
             }
         }
     }

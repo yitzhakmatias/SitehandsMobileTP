@@ -21,28 +21,28 @@ namespace BL.Core.Services.Repository
                
                 Pass = "admin",
                 Name = "john",
-                Email = "123123-212"
+                Email = "john@abc.com"
             },
             new User()
             {
                 //Id = 2,
                 Pass = "admin",
                 Name = "peter",
-                Email = "666666-2222"
+                Email = "peter@abc.com"
             },
             new User()
             {
                // Id = 1,
                 Pass = "admin",
                 Name = "sarah",
-                Email = "2233-2222"
+                Email = "sarah@abc.com"
             },
             new User()
             {
                 //Id = 2,
                 Pass = "admin",
                 Name = "admin",
-                Email = "666666-2222"
+                Email = "admin@abc.com"
             },
         };
     }

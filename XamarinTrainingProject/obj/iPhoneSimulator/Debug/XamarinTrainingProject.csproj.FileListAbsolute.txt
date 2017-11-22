@@ -14,3 +14,4 @@ D:\work\labs\SiteHands\SitehandsMobileTP\XamarinTrainingProject\obj\iPhoneSimula
 D:\work\labs\SiteHands\SitehandsMobileTP\XamarinTrainingProject\obj\iPhoneSimulator\Debug\XamarinTrainingProject.exe
 D:\work\labs\SiteHands\SitehandsMobileTP\XamarinTrainingProject\obj\iPhoneSimulator\Debug\XamarinTrainingProject.pdb
 D:\work\labs\SiteHands\SitehandsMobileTP\XamarinTrainingProject\bin\iPhoneSimulator\Debug\BL.Core.Services.dll.mdb
+D:\work\labs\SiteHands\SitehandsMobileTP\XamarinTrainingProject\obj\iPhoneSimulator\Debug\optimized\Images\settings.png
