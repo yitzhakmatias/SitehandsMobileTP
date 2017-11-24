@@ -22,6 +22,8 @@ namespace XamarinTrainingProject.DataSources
         {
             UITableViewCell cell = tableView.DequeueReusableCell(_cellIdentifier) ?? new UITableViewCell(UITableViewCellStyle.Subtitle, _cellIdentifier);
 
+            //cell.Accessory = UITableViewCellAccessory.DetailDisclosureButton;
+
             var country = _getCountries[indexPath.Row];
 
             cell.TextLabel.Text = country.Name ;

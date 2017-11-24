@@ -10,19 +10,19 @@ namespace BL.Core.Services.AppServices
 {
     public class LoginService
     {
-        private readonly string _user;
+        private readonly string _email;
         private readonly string _pass;
         readonly UserRepository _userRepository = new UserRepository();
 
         public LoginService(string user, string pass)
         {
-            _user = user;
+            _email = user;
             _pass = pass;
         }
         public User ValidateUserPass()
         {
-            if (String.IsNullOrEmpty(_user)) return null;
-            var userRepo = _userRepository.GetWebUsers().FirstOrDefault(p => p.Name.Contains(_user));
+            if (String.IsNullOrEmpty(_email)) return null;
+            var userRepo = _userRepository.GetWebUsers().FirstOrDefault(p => p.Email.Contains(_email));
             if (userRepo == null) return null;
             {
                 if (String.IsNullOrEmpty(_pass)) return null;

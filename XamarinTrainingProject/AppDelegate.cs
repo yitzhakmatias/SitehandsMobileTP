@@ -1,4 +1,5 @@
 ﻿using System;
+using Firebase.Core;
 using Foundation;
 using UIKit;
 
@@ -24,6 +25,8 @@ namespace XamarinTrainingProject
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
+            App.Configure();
+
             if (isAuthenticated)
             {
                 //We are already authenticated, so go to the main tab bar controller;
@@ -94,6 +97,22 @@ namespace XamarinTrainingProject
         public override void WillTerminate(UIApplication application)
         {
             // Called when the application is about to terminate. Save data, if needed. See also DidEnterBackground.
+        }
+
+        public static void ShowMessage(string title, string message, UIViewController fromViewController, Action okAction = null)
+        {
+            if (UIDevice.CurrentDevice.CheckSystemVersion(8, 0))
+            {
+                var alert = UIAlertController.Create(title, message, UIAlertControllerStyle.Alert);
+                alert.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Default, (obj) => okAction?.Invoke()));
+                fromViewController.PresentViewController(alert, true, null);
+            }
+            else
+            {
+                var alert = new UIAlertView(title, message, null, "Ok", null);
+                alert.Canceled += (sender, e) => okAction?.Invoke();
+                alert.Show();
+            }
         }
     }
 }
