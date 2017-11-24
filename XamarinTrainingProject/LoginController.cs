@@ -9,8 +9,15 @@ namespace XamarinTrainingProject
     public partial class LoginController : UIViewController
     {
         Auth auth;
+        private readonly NSUserDefaults _plist;
+
+        private  UIButton _sender ;
+
+        private string _email;
+
         public LoginController(IntPtr handle) : base(handle)
         {
+            _plist = NSUserDefaults.StandardUserDefaults;
         }
 
         public event EventHandler OnLoginSuccess;
@@ -24,9 +31,9 @@ namespace XamarinTrainingProject
 
         partial void LoginButton_TouchUpInside(UIButton sender)
         {
-            var email = UserNameTextView.Text.Trim();
+            _email = UserNameTextView.Text.Trim();
             var password = PasswordTextView.Text.Trim();
-            
+            _sender = sender;
 
            /* Auth.DefaultInstance.SignIn(email, password, (user, error) => {
                 if (error != null)
@@ -57,13 +64,13 @@ namespace XamarinTrainingProject
             });*/
 
 
-            if (string.IsNullOrWhiteSpace(email) ||
+            if (string.IsNullOrWhiteSpace(_email) ||
                 string.IsNullOrWhiteSpace(password))
             {
                 AppDelegate.ShowMessage("Hey!", "Seems that some information is missing...", this);
                 return;
             }
-            auth.SignIn(email, password, SignInOnCompletion);
+            auth.SignIn(_email, password, SignInOnCompletion);
 
 
             //var login = new LoginService(UserNameTextView.Text.Trim(), PasswordTextView.Text.Trim());
@@ -92,15 +99,7 @@ namespace XamarinTrainingProject
                  new UIAlertView("Login Error", "Bad user name or password", null, "OK", null).Show();
              }*/
 
-            if (OnLoginSuccess != null)
-            {
-                // Get Shared User Defaults
-                var plist = NSUserDefaults.StandardUserDefaults;
-
-                plist.SetString(email, "email");
-               
-                OnLoginSuccess(sender, new EventArgs());
-            }
+           
         }
 
         private void SignInOnCompletion(User user, NSError error)
@@ -124,10 +123,21 @@ namespace XamarinTrainingProject
                     default:
                         if (errorCode == AuthErrorCode.KeychainError)
                         {
+
+                            if (OnLoginSuccess != null)
+                            {
+                                // Get Shared User Defaults
+                                _plist.SetString(_email, "email");
+
+                                _plist.SetBool(true, "isAuthenticated");
+
+                                OnLoginSuccess(_sender, new EventArgs());
+                            }
                             break;
                         }
-                        new UIAlertView("Login Error", "Bad user name or password", null, "OK", null).Show();
+                        new UIAlertView("Login Error", "Bad user name or password" + errorCode , null, "OK", null).Show();
                         //AppDelegate.ShowMessage("Could not login!", error.LocalizedDescription, NavigationController);
+                        _plist.SetBool(true, "isAuthenticated");
                         break;
                 }
 

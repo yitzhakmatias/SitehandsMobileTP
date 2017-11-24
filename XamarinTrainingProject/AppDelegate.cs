@@ -25,9 +25,12 @@ namespace XamarinTrainingProject
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
-            App.Configure();
+            Firebase.Core.App.Configure();
+            // Get Shared User Defaults
+            var plist = NSUserDefaults.StandardUserDefaults;
+            var isUserAuthenticated = plist.BoolForKey("isAuthenticated");
 
-            if (isAuthenticated)
+            if (isUserAuthenticated)
             {
                 //We are already authenticated, so go to the main tab bar controller;
                 var tabBarController = GetViewController(MainStoryboard, "MainNavigationBar");

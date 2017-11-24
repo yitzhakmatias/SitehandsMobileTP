@@ -43,6 +43,10 @@ namespace XamarinTrainingProject
                 //Set the Login Page as our RootViewController
                 appDelegate.SetRootViewController(loginPageViewController, true);
 
+                var plist = NSUserDefaults.StandardUserDefaults;
+
+                plist.SetBool(false, "isAuthenticated");
+
                 this.DismissModalViewController(true);
 
             };
