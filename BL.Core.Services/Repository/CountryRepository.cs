@@ -8,7 +8,7 @@ using BL.Core.Services.WebServices;
 
 namespace BL.Core.Services.Repository
 {
-    public class CountryRepository
+    public class CountryRepository : ICountryRepository
     {
         public List<Country> GetCountries()
         {

@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using System;
+using Autofac;
 using BL.Core.Services.Repository;
 using UIKit;
 using XamarinTrainingProject.DataSources;
@@ -8,13 +9,13 @@ namespace XamarinTrainingProject
 {
     public partial class CountryListViewController : UITableViewController
     {
-        readonly CountryRepository _countryRepository = new CountryRepository();
+        private ICountryRepository _countryRepository;// = new CountryRepository();
         public UIStoryboard MainStoryboard
         {
             get { return UIStoryboard.FromName("Main", NSBundle.MainBundle); }
         }
-     
-        public CountryListViewController (IntPtr handle) : base (handle)
+
+        public CountryListViewController(IntPtr handle) : base(handle)
         {
             
         }
@@ -24,19 +25,23 @@ namespace XamarinTrainingProject
             //*********************************************/
             this.NavigationItem.SetRightBarButtonItem(new UIBarButtonItem(UIImage.FromFile("Images/settings.png")
                 , UIBarButtonItemStyle.Plain
-                , (sender, args) => {
-                   // var settingsController = GetViewController(MainStoryboard, "Settings") as SettingsController;
+                , (sender, args) =>
+                {
+                    // var settingsController = GetViewController(MainStoryboard, "Settings") as SettingsController;
                     var settingsController = GetViewController(MainStoryboard, "SettingsNav");
                     this.SettingsSelected(settingsController);
-                }),true);
+                }), true);
 
             //*********************************************/
+            using (var scope = AppDelegate.AutoFacContainer.BeginLifetimeScope())
+            {
+                _countryRepository = scope.Resolve<ICountryRepository>();
 
-            var countries = _countryRepository.GetWebCountries();
-            var companyDataSource = new CountryDataSource(countries, this);
-            TableView.Source = companyDataSource;
-            this.NavigationItem.Title = "Country List";
-            
+                var countries = _countryRepository.GetWebCountries();
+                var companyDataSource = new CountryDataSource(countries, this);
+                TableView.Source = companyDataSource;
+                this.NavigationItem.Title = "Country List";
+            }
         }
 
         public UIViewController GetViewController(UIStoryboard storyboard, string viewControllerName)
@@ -64,7 +69,7 @@ namespace XamarinTrainingProject
 
         public async void SettingsSelected(UIViewController controller)
         {
-        
+
             if (controller != null)
             {
                 controller.ModalTransitionStyle = UIModalTransitionStyle.PartialCurl;

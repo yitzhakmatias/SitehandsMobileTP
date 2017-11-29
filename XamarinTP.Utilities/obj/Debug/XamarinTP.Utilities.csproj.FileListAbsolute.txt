@@ -1,0 +1,5 @@
+D:\work\labs\SiteHands\SitehandsMobileTP\XamarinTP.Utilities\bin\Debug\XamarinTP.Utilities.dll
+D:\work\labs\SiteHands\SitehandsMobileTP\XamarinTP.Utilities\bin\Debug\XamarinTP.Utilities.pdb
+D:\work\labs\SiteHands\SitehandsMobileTP\XamarinTP.Utilities\obj\Debug\XamarinTP.Utilities.csproj.CoreCompileInputs.cache
+D:\work\labs\SiteHands\SitehandsMobileTP\XamarinTP.Utilities\obj\Debug\XamarinTP.Utilities.dll
+D:\work\labs\SiteHands\SitehandsMobileTP\XamarinTP.Utilities\obj\Debug\XamarinTP.Utilities.pdb

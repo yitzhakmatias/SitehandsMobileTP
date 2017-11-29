@@ -38,6 +38,7 @@
     <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\CountryRepository.cs" />
+    <Compile Include="Repository\ICountryRepository.cs" />
     <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="WebServices\CountriesWebService.cs" />
   </ItemGroup>

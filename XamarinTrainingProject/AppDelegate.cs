@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Autofac;
+using BL.Core.Services.Repository;
 using Firebase.Core;
 using Foundation;
 using UIKit;
@@ -12,6 +15,7 @@ namespace XamarinTrainingProject
     public class AppDelegate : UIApplicationDelegate
     {
         private bool isAuthenticated = false;
+        public static IContainer AutoFacContainer { get; set; }
 
         public override UIWindow Window
         {
@@ -25,6 +29,10 @@ namespace XamarinTrainingProject
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
+
+            RegisterIoC();
+
+            //Firebase init
             Firebase.Core.App.Configure();
             // Get Shared User Defaults
             var plist = NSUserDefaults.StandardUserDefaults;
@@ -116,6 +124,36 @@ namespace XamarinTrainingProject
                 alert.Canceled += (sender, e) => okAction?.Invoke();
                 alert.Show();
             }
+        }
+
+        public override bool WillFinishLaunching(UIApplication application, NSDictionary launchOptions)
+        {
+
+
+            return true;
+        }
+
+        private void RegisterIoC()
+        {
+            var builder = new ContainerBuilder();
+
+            // access the assembly and register ALL classes which implement our custom base class
+            var types = GetType().Assembly.DefinedTypes;
+            foreach (var theType in types)
+            {
+                if (theType.BaseType == typeof(AutoFacUIController))
+                    builder.RegisterType(theType).PropertiesAutowired();
+            }
+
+            // ask the user to register their dependencies
+            RegisterDependencies(builder);
+
+            // establish our static container
+            AutoFacContainer = builder.Build();
+        }
+        protected void RegisterDependencies(Autofac.ContainerBuilder builder)
+        {
+            builder.RegisterType<CountryRepository>().As<ICountryRepository>();
         }
     }
 }

@@ -8,7 +8,7 @@ namespace XamarinTrainingProject
 {
     public partial class LoginController : UIViewController
     {
-        Auth auth;
+        Auth _auth;
         private readonly NSUserDefaults _plist;
 
         private  UIButton _sender ;
@@ -26,7 +26,7 @@ namespace XamarinTrainingProject
         {
             base.ViewDidLoad();
 
-            auth = Auth.DefaultInstance;
+            _auth = Auth.DefaultInstance;
         }
 
         partial void LoginButton_TouchUpInside(UIButton sender)
@@ -70,7 +70,7 @@ namespace XamarinTrainingProject
                 AppDelegate.ShowMessage("Hey!", "Seems that some information is missing...", this);
                 return;
             }
-            auth.SignIn(_email, password, SignInOnCompletion);
+            _auth.SignIn(_email, password, SignInOnCompletion);
 
 
             //var login = new LoginService(UserNameTextView.Text.Trim(), PasswordTextView.Text.Trim());
